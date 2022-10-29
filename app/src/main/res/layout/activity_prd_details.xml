@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:id="@+id/firstCardView"
+        android:layout_height="320dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewInfo"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewInfo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="product name"
+                android:textColor="#1E383C"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/glassprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewInfo"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="15dp"
+                android:text="999"
+                android:textColor="#2634BF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_below="@+id/imageViewInfo"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="0dp"
+                android:textSize="25dp"
+                android:textColor="#2634BF"
+                android:textAlignment="textEnd"
+                android:layout_marginBottom="15dp"
+                android:layout_toStartOf="@+id/glassprice"
+                android:layout_toEndOf="@+id/product_name"
+                android:text="₹" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:id="@+id/secondCardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/firstCardView">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="130dp"
+                android:id="@+id/addquantity"
+                android:background="@drawable/plus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/quantity"
+                android:textSize="28sp"
+                android:layout_toRightOf="@+id/addquantity"/>
+
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/subquantity"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/quantity"
+                android:background="@drawable/minus"/>
+
+
+<!--            <RadioGroup-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:id="@+id/radioGroup"-->
+<!--                android:focusedByDefault="true"-->
+<!--                android:layout_below="@id/subquantity">-->
+
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/hotradioButton"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:text="with glasses" />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/coldRadioButton"-->
+<!--                    android:checked="true"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="without glasess" />-->
+
+<!--            </RadioGroup>-->
+        </RelativeLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondCardView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="63dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discription"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="THIS IS DESCRIPTION  AREA"
+                android:textSize="12dp"></TextView>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3CB3E3"
+                android:shadowRadius="@integer/material_motion_duration_long_2"
+                android:text="ORDER NOW"
+                android:textColor="#591606"
+                android:textSize="25dp">
+
+            </Button>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

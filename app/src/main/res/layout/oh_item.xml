@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/oh_prd_temp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:layout_gravity="center"
+                android:text="customer name"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/oh_name"
+                android:paddingTop="0dp"
+                android:layout_width="200dp"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="name">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:layout_gravity="center"
+                android:text="ADDRESS:"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/oh_address"
+                android:paddingTop="0dp"
+                android:layout_width="200dp"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="PARIS">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:layout_gravity="center"
+                android:text="Mobile no."
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/oh_phone"
+                android:paddingTop="0dp"
+                android:layout_width="200dp"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="9898168620">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:layout_gravity="center"
+                android:text="Price"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/oh_price"
+                android:paddingTop="0dp"
+                android:layout_width="200dp"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="$87">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

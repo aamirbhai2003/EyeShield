@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".address"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="ORDER SUMMARY"
+            android:textAlignment="center"
+            android:textColor="@color/teal_200"
+            android:foregroundTint="@color/colorPrimary"
+            android:textSize="30dp">
+
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#99AE103D"
+            android:hint="DELIVERY ADDRESS"></EditText>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#99AE103D"
+            android:hint="RECIEVER PHONE"></EditText>
+
+        <EditText
+            android:id="@+id/et_prdname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#99AE103D"
+            android:hint="PRODUCT NAME"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/et_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#99AE103D"
+            android:hint="QUANTINTY"></EditText>
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#99AE103D"
+            android:hint="TOATAL PRICE"></EditText>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundTint="@color/colorPrimary"
+            android:backgroundTint="#518ED8"
+            android:text="SAVE ADDRESS AND CONFIRM ORDER">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
